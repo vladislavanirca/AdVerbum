@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdVerbum</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="icon" href="../images/icon.png">
+</head>
+<body class="gradient">
+<header>
+    <a href="../index.html">
+        AdVerbum
+        <i class="far fa-newspaper logo"></i>
+    </a>
+    <div class="logo2"><br>Revista Liceului Teoretic "Vlad Iovță"</div>
+    <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+</header>
+<div class="page-container">
+    <aside id="side-menu">
+        <a href="index.html">Revista text</a>
+        <a href=" http://ltcocieri.educ.md/">Noutăți</a>
+        <a href="echipa.html">Echipa</a>
+        <a href="contacte.html">Contacte</a>
+        <a href="trimite.html">Articolul tău</a>
+    </aside>
+    <main>
+        <h2>Articolul tău poate fi aici:</h2>
+        <div class="row">
+            <div class="col-100">
+                <p>
+                    Dorești să ne împărtășești experiența ta de redactor?? <br> Noi suntem în căutarea oamenilor
+                    îngenioți. Așteptăm cu nerăbdare articolul tău! <br> Urmărește-ne cu atenție, următorul număr
+                    AdVerbum poate conține articolul tău
+                </p>
+                <br><br>
+                <div class="contact-form map">
+                    <form id="formular" method="post">
+                        <h3 class="centered">Completează</h3>
+                        <input id="nume" type="text" placeholder="Nume">
+                        <input id="prenume" type="text" placeholder="Prenume">
+                        <input id="email" type="email" placeholder="E-mail">
+                        <select id="clasa">
+                            <option>V</option>
+                            <option>VI</option>
+                            <option>VII</option>
+                            <option>VIII</option>
+                            <option>IX</option>
+                            <option>X</option>
+                            <option>XI</option>
+                            <option>XII</option>
+                        </select>
+                        <input id="titlu" type="text" placeholder="Titlu articol">
+                        <textarea id="articol" rows="5" placeholder="Introdu articolul tău aici..."></textarea>
+                        <input id="trimite" onclick="sendE()" type="button" VALUE="Trimite">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<div>
+    <footer>
+        <p class="fl_left">Copyright &copy; 2021 Nirca Vladislava</p>
+        <p class="fl_right">AdVerbum L.T Vlad Ioviță</p>
+    </footer>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("user_ilvv8x7i04TH1HPS7TWCc");
+    })();
+</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
+
